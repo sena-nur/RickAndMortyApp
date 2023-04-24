@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RickAndMortyApp</string>
+    <string name="welcome_message">Welcome!</string>
+    <string name="hello_message">Hello!</string>
+</resources>

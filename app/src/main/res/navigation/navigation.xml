@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/rickAndMortyListFragment">
+
+    <fragment
+        android:id="@+id/rickAndMortyListFragment"
+        android:name="com.sena.rickandmortyapp.RickAndMortyListFragment"
+        android:label="RickAndMortyListFragment" >
+        <action
+            android:id="@+id/action_rickAndMortyListFragment_to_characterDetailFragment"
+            app:destination="@id/characterDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="com.sena.rickandmortyapp.CharacterDetailFragment"
+        android:label="CharacterDetailFragment" >
+        <action
+            android:id="@+id/action_characterDetailFragment_to_rickAndMortyListFragment"
+            app:destination="@id/rickAndMortyListFragment" />
+    </fragment>
+</navigation>
